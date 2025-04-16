@@ -3,6 +3,7 @@
     padding-bottom: 100px;
     min-height: 100vh;
     background-image: url(../images/aniversario_background.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/aniversario_background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -10,6 +11,10 @@
     &__text {
         margin-top: 64px;
         margin-bottom: 64px;
+        font-size: 40px;
+        line-height: 56px;
+        font-weight: 800;
+        text-align: center;
     }
 
     &__logo {
@@ -17,5 +22,19 @@
         margin: 0 auto;
         height: 80px;
         width: 150px;
+    }
+
+    @media (max-width:640px) {
+        padding: 40px 0;
+
+        &__logo {
+            height: 70px;
+        }
+
+        &__text {
+            font-size: 22px;
+            line-height: 24px;
+            margin: 24px 0;
+        }
     }
 }
