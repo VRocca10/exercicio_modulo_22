@@ -1,0 +1,34 @@
+.info {
+    padding: 16px 24px;
+    background-color: #8b7878;
+    display: flex;
+    justify-content: space-between;
+
+    &__bar {
+        display: flex;
+        gap: 40px;
+
+        &__item {
+            font-size: 14px;
+            color: #000;
+
+            b {
+                font-size: 18px;
+                display: block;
+                color: #000;
+            }
+        }
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+
+        &__bar {
+            display: block;
+
+            &__item {
+                margin-bottom: 24px;
+            }
+        }
+    }
+}
