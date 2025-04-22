@@ -1,0 +1,53 @@
+@use "variables" as *;
+
+.event {
+    padding: 80px 0;
+    
+
+    &--gift-one {
+        background-image: linear-gradient($red1, $red2);
+    }
+
+    &--gift-two {
+        background-image: linear-gradient( $red2,$red3 );
+    }
+
+    &--gift-three{
+        background-image: linear-gradient($red3, $red2);
+    }
+
+    .container {
+        display: flex;
+    }
+
+    &__image {
+        max-width: 360px;
+        display: flex;
+        justify-self: center;
+    }
+
+    &__detail {
+        margin: 40px;
+
+        &__title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        &__description {
+            line-height: 22px;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .container {
+            display: block;
+        }
+
+        &__detail {
+            margin-bottom: 16px;
+            margin-right: 0;
+        }
+    }
+}
